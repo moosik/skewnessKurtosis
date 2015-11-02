@@ -1,7 +1,3 @@
 ShinyApp to model skewness and kurtosis based on Jones, M. C. and Pewsey A. (2009). Sinh-arcsinh distributions. Biometrika 96: 761–780. The original code is from an
 answer by user10525 on StackOverflow: 
 http://stats.stackexchange.com/questions/43482/transformation-to-increase-kurtosis-and-skewness-of-normal-r-v
-
-Brief to do overview:
-1. Need two sliders: one for epsilon, the other one is for delta
-2. For starters the numbers will be present: vec = seq(-15,15,0.001)
