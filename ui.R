@@ -30,7 +30,8 @@ shinyUI(fluidPage(
     
     # Show a plot of the generated distribution
     mainPanel(
-      plotOutput("distPlot")
+      plotOutput("distPlot"),
+      fluidRow(column(width = 3, offset = 1, tableOutput("summaryTab") ))
     )
   )
 ))
