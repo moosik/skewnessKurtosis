@@ -14,6 +14,15 @@ p('Sinh-arcsinh transformation generates a
   # Sidebar with a slider input for the number of bins
   sidebarLayout(
     sidebarPanel(
+      sliderInput("quantiles",
+                  "Qunatiles:",
+                  min = -10,
+                  max = 10,
+                  value = c(-7,7),
+                  step = 0.1),
+      textInput("step",
+                "Step increment",
+                value = "0.01"),
       sliderInput("epsilon",
                   "Epsilon:",
                   min = -2,
