@@ -16,23 +16,20 @@ p('Sinh-arcsinh transformation generates a
     sidebarPanel(
       sliderInput("quantiles",
                   "Qunatiles:",
-                  min = -10,
-                  max = 10,
+                  min = -20,
+                  max = 20,
                   value = c(-7,7),
                   step = 0.1),
-      textInput("step",
-                "Step increment",
-                value = "0.01"),
       sliderInput("epsilon",
                   "Epsilon:",
-                  min = -2,
-                  max = 2,
+                  min = -3,
+                  max = 3,
                   value = 0, 
                   step = 0.1),
       sliderInput("delta",
                   "Delta:",
                   min = 0,
-                  max = 4,
+                  max = 5,
                   value = 0, 
                   step = 0.1)
     ),
@@ -40,7 +37,7 @@ p('Sinh-arcsinh transformation generates a
     # Show a plot of the generated distribution
     mainPanel(
       plotOutput("distPlot"),
-      fluidRow(column(width = 3, offset = 1, tableOutput("summaryTab") ))
+      fluidRow(column(width = 4, offset = 1, tableOutput("summaryTab") ))
     )
   )
 ))
